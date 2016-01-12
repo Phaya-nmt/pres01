@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title></title>
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    </head>
+<body class="impress-not-supported">
+
+<!-- 注意書き -->
+<div class="fallback-message">
+    <p>サポートしていないブラウザです</p>
+</div>
+
+<div id="impress">
+
+<!--
+"data-" で始まるものは独自データ属性というものらしい
+詳しくは↓
+http://www.html5.jp/tag/attributes/data.html
+ -->
+
+<!-- 1ページ目 -->
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+    </div>
+<!-- 1ページ目 -->
+
+<!-- 2ページ目 -->
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
+    </div>
+<!-- 2ページ目 -->
+
+<!-- 4ページ目 -->
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    </div>
+<!-- 4ページ目 -->
+
+<!-- 5ページ目 -->
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">then you should try</span>
+        <h1>impress.js<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+    </div>
+<!-- 5ページ目 -->
+
+<!-- 6ページ目 -->
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>It's a <strong>presentation tool</strong> <br/>
+        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
+        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+    </div>
+<!-- 6ページ目 -->
+
+<!-- 7ページ目 -->
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+    </div>
+<!-- 7ページ目 -->
+
+<!-- 8ページ目 -->
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>and <b>tiny</b> ideas</p>
+    </div>
+<!-- 8ページ目 -->
+
+<!-- 9ページ目 -->
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    </div>
+<!-- 9ページ目 -->
+
+<!-- 10ページ目 -->
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    </div>
+<!-- 10ページ目 -->
+
+<!-- 11ページ目 -->
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <!-- <p>以下が</p>
+        <q><a href="http://github.com/bartaz/impress.js">参考ソース</a>です</q> -->
+    </div>
+<!-- 11ページ目 -->
+
+<!-- 12ページ目 -->
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>one more thing...</p>
+    </div>
+<!-- 12ページ目 -->
+
+<!-- 13ページ目 -->
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+        <span class="footnote">* beat that, prezi ;)</span>
+    </div>
+<!-- 13ページ目 -->
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<!-- ヒントエリア -->
+<a href="#">
+<div class="hint">
+
+    <p><!-- マーケティング・プロモーションの<br>【個人認識による】<br> -->基本的概念</p>
+
+</div>
+</a>
+<!-- ヒントエリア -->
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
