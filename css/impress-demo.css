@@ -27,6 +27,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+background:url("bg.jpg") #333;
+background-attachment:fixed;
+background-size:cover;
+position:relative;
+}
 }
 ol, ul {
     list-style: none;
@@ -142,13 +147,14 @@ a:focus {
 
 
 .slide {
+    /*最初の3コマ*/
     display: block;
 
     width: 900px;
     height: 700px;
     padding: 40px 60px;
 
-    background-color: white;
+    background-color: red;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
@@ -167,7 +173,7 @@ a:focus {
     font-size: 50px;
     line-height: 72px;
 
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .slide q strong {
@@ -412,7 +418,7 @@ a:focus {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 200px;
+    bottom: 160px;
 
 /*ヒントエリアのバックグラウンドカラー*/
     background: rgba(0,0,0,0.8);
@@ -482,3 +488,15 @@ transition: opacity 1s ease-out;
 .impress-enabled          { pointer-events: none }
 .impress-enabled #impress { pointer-events: auto }
 
+
+    video {display:block;}
+    #bg-video {
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-1;
+}

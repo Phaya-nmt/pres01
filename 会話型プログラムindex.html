@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=1024" />
     <title></title>
     <link href="css/impress-demo.css" rel="stylesheet" />
-    </head>
+    <style type="text/css">
+    video {display:block;}
+    #bg-video {
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-1;
+    }
+</style>
+</head>
 <body class="impress-not-supported">
-
 <!-- 注意書き -->
 <div class="fallback-message">
     <p>サポートしていないブラウザです</p>
@@ -22,22 +34,27 @@
 http://www.html5.jp/tag/attributes/data.html
  -->
 
+<video id="bg-video" autoplay loop muted>
+<source src="bg-movie.mp4" type="video/CXKQ2QLUsAA38PK.mp4">
+<source src="bg-movie.webm" type="video/webm">
+</video>
 <!-- 1ページ目 -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>人との交流を目指した<br><b>会話プログラム</b>の開発における目標とする仕様と、制作の目的。</q>
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500" style="text-align: center">
+        <q>目標とする仕様と、制作の目的。<br><img src="img/CYcCkjYUAAAqXli.png" height="354" width="409"><br>構築の基本概念</q>
     </div>
 <!-- 1ページ目 -->
 
 <!-- 2ページ目 -->
     <div class="step slide" data-x="0" data-y="-1500">
         <q>1966年アメリカで、ジョセフ・ワイゼンバウムがELIZAと呼ばれる会話プログラムを発表<br><strong>英語名:chatterbotシステム</strong><br>
-        通称は"会話ボット"等と呼ばれ、近年では<strong>人工無脳</strong>という括りの仕組みを目指しています。</q>
+        通称は"会話ボット"等と呼ばれ、近年<strong>人工無脳</strong>と呼ばれている括りの仕組み制作を目指します。</q>
     </div>
 <!-- 2ページ目 -->
 
 <!-- 4ページ目 -->
     <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+        <q>人工無脳は、あたかも人の言葉を理解して応答している様に見えますが、入力構文に形態素解析を行い、解析単語を保存。<br>
+        入力単語を既存データとマッチングさせ標本化定理を用いてマルコフ連鎖による結果を出力しているに過ぎません。</q>
     </div>
 <!-- 4ページ目 -->
 
@@ -110,7 +127,7 @@ http://www.html5.jp/tag/attributes/data.html
 <a href="#">
 <div class="hint">
 
-    <p><!-- 会話プログラムの開発<br> -->基本的概念</p>
+    <p><!-- 会話プログラムの開発<br> --><h2>～ 新 年 の 抱 負 ～</h2><br>真に人との交流を目指した<br><b>会話プログラム</b>の開発</p>
 
 </div>
 </a>
