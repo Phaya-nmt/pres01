@@ -31,6 +31,7 @@ background:url("bg.jpg") #333;
 background-attachment:fixed;
 background-size:cover;
 position:relative;
+background-image: ../img/r1_500.gif;
 }
 }
 ol, ul {
@@ -154,7 +155,7 @@ a:focus {
     height: 700px;
     padding: 40px 60px;
 
-    background-color: red;
+    background-color: #CCC;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
@@ -274,19 +275,19 @@ a:focus {
     transition-delay:         0.25s;
 }
 
-
+/*大きさが変わるアニメーション*/
 #ing.present .scaling {
-    -webkit-transform: scale(0.7);
-    -moz-transform:    scale(0.7);
-    -ms-transform:     scale(0.7);
-    -o-transform:      scale(0.7);
-    transform:         scale(0.7);
-
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay:    0.5s;
-    -ms-transition-delay:     0.5s;
-    -o-transition-delay:      0.5s;
-    transition-delay:         0.5s;
+    -webkit-transform: scale(1.4);
+    -moz-transform:    scale(1.4);
+    -ms-transform:     scale(1.4);
+    -o-transform:      scale(1.4);
+    transform:         scale(1.4);
+/*大きさの変わる秒数*/
+    -webkit-transition-delay: 0.6s;
+    -moz-transition-delay:    0.6s;
+    -ms-transition-delay:     0.6s;
+    -o-transition-delay:      0.6s;
+    transition-delay:         0.6s;
 }
 
 
